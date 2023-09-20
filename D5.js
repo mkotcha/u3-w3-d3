@@ -16,7 +16,7 @@ const printArray = function (arr) {
         console.log(element);
     }
 };
-printArray(pets);
+// printArray(pets);
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
@@ -24,7 +24,7 @@ const sortArray = function (arr) {
     let arrReverse = arr.sort();
     return arr;
 };
-printArray(sortArray(pets));
+// printArray(sortArray(pets));
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
@@ -32,7 +32,7 @@ const sortArrayReverse = function (arr) {
     let arrReverse = arr.sort().reverse();
     return arr;
 };
-printArray(sortArrayReverse(pets));
+// printArray(sortArrayReverse(pets));
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
@@ -43,7 +43,6 @@ const firstToLast = function (arr) {
     }
     return arr;
 };
-printArray(firstToLast(pets));
 const cars = [
     {
         brand: "Ford",
@@ -226,4 +225,4 @@ const charToNum = function (array) {
     return arrayNum;
 };
 const numberArray = charToNum(charactersArray);
-printArray(numberArray);
+// printArray(numberArray);

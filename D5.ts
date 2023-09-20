@@ -18,7 +18,7 @@ const printArray = function (arr: (string | number | Cars)[]) {
   }
 };
 
-printArray(pets);
+// printArray(pets);
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
@@ -29,7 +29,7 @@ const sortArray = function (arr: string[]) {
   return arr;
 };
 
-printArray(sortArray(pets));
+// printArray(sortArray(pets));
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
@@ -40,7 +40,7 @@ const sortArrayReverse = function (arr: string[]) {
   return arr;
 };
 
-printArray(sortArrayReverse(pets));
+// printArray(sortArrayReverse(pets));
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
@@ -54,7 +54,7 @@ const firstToLast = function (arr: string[]) {
   return arr;
 };
 
-printArray(firstToLast(pets));
+// printArray(firstToLast(pets));
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -65,7 +65,7 @@ type Cars = {
   model: string;
   color: string;
   trims: string[];
-  licensePlate?: string;
+  [key: string]: string | string[];
 };
 
 const cars: Cars[] = [
@@ -272,4 +272,4 @@ const charToNum = function (array: string[]) {
 };
 
 const numberArray = charToNum(charactersArray);
-printArray(numberArray);
+// printArray(numberArray);
